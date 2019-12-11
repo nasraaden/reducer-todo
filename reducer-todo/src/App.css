@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+  background: aliceblue;
+}
+
+.App{
+  text-align: center;
+  background: white;
+  border: 2px solid black;
+  width: 350px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 1%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form{
+  margin: 2%;
+  padding: 1%;
+  background: white;
+
+}
+
+input{
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 5px;
+  background: white;
+  border:1px solid black;
+}
+
+
+button{
+  background: powderblue;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 1rem;
+  padding: 5px;
+  
+  cursor: pointer;
+}
+
+button:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12);
+}
+
+
+.task-card{
+  width: 50%;
+  background: powderblue;
+  margin: 5px auto;
+  padding: 1px;
+}
+
+.task-card .completed{
+  text-decoration: line-through;
+    
+}
+
+
+

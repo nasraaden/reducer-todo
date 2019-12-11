@@ -17,7 +17,7 @@ function App() {
     dispatch({type: "TOGGLE_COMPLETE", payload: itemId})
   }
 
-  const clearComplete = e => {
+  const clearComplete = () => {
     dispatch({type: "CLEAR_COMPLETE"})
   }
 

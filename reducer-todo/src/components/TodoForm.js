@@ -8,25 +8,21 @@ const TodoForm = props => {
         setNewItem(e.target.value);
       };
 
-    const addButton = e => {
+    const submitForm= e => {
         e.preventDefault();
         props.addItem(newItem);
         setNewItem("");
     }
 
-
-
-
     return(
         <div>
-            <form>
-                    <input
-                        onChange={handleChanges}
-                        type="text" name="item" 
-                        placeholder="Task..."
-                    />
-                    <button onClick={addButton}>Add</button>
-                    <button >Clear Completed</button>
+            <form onSubmit={submitForm}>
+                <input
+                    value={newItem}
+                    onChange={handleChanges}
+                    type="text" name="item" 
+                />
+                <button>Add</button>
             </form>
         </div>
     )
